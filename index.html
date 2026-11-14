@@ -3,325 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IEP Ready Kit — Walk into your child's IEP meeting prepared</title>
-<meta name="description" content="A $14 printable IEP prep kit: checklists, letter templates, a meeting question script and a progress tracker. Educational resource only, not legal advice.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy:#1F3A5F;
-    --orange:#F28C28;
-    --orange-dark:#d9731a;
-    --gold:#F8C27A;
-    --bg:#F4F8FC;
-    --white:#ffffff;
-    --text:#1d2b3e;
-    --muted:#5b6b7f;
-    --line:#e3eaf3;
-    --shadow:0 18px 40px -18px rgba(31,58,95,.35);
-    --radius:22px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
-    color:var(--text);
-    background:var(--white);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
-  img{max-width:100%;display:block}
-  a{color:inherit}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
-  section{padding:88px 0}
-  .eyebrow{
-    display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;
-    text-transform:uppercase;color:var(--orange-dark);background:#fff3e6;
-    padding:6px 14px;border-radius:999px;margin-bottom:16px
-  }
-  h1,h2,h3{color:var(--navy);line-height:1.2;font-weight:800}
-  h1{font-size:clamp(34px,5vw,56px);letter-spacing:-.02em}
-  h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.01em}
-  h3{font-size:20px;font-weight:700}
-  .section-head{text-align:center;max-width:680px;margin:0 auto 52px}
-  .section-head p{color:var(--muted);margin-top:12px;font-size:17px}
+<title>IEP Ready Kit | Printable IEP prep for parents of autistic children</title>
+<meta name="description" content="A $14 printable kit with checklists, letter templates and a question script to help parents of autistic children prepare for IEP meetings. Not legal advice.">
+<link rel="canonical" href="https://iepreadykit.com/">
+<meta name="theme-color" content="#1F3A5F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IEP Ready Kit">
+<meta property="og:title" content="IEP Ready Kit | Printable IEP prep for parents of autistic children">
+<meta property="og:description" content="Checklists, letter templates and a question script to help you prepare for your child's IEP meeting. General information only, not legal advice.">
+<meta property="og:url" content="https://iepreadykit.com/">
+<meta property="og:image" content="https://iepreadykit.com/images/og-image.png">
+<meta property="og:image:alt" content="IEP Ready Kit: a binder, a checklist and a question card">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
 
-  /* Buttons */
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:10px;
-    background:linear-gradient(180deg,var(--orange),var(--orange-dark));
-    color:#fff;font-weight:700;font-size:19px;text-decoration:none;
-    padding:18px 34px;border-radius:14px;border:0;cursor:pointer;
-    box-shadow:0 14px 28px -12px rgba(242,140,40,.85);
-    transition:transform .15s ease, box-shadow .15s ease;
-  }
-  .btn:hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(242,140,40,.9)}
-  .btn-block{width:100%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "IEP Ready Kit",
+      "url": "https://iepreadykit.com/"
+    },
+    {
+      "@type": "Product",
+      "name": "IEP Ready Kit",
+      "description": "A printable PDF kit with checklists, letter templates, a meeting question script, a progress tracker, a glossary and binder pages for parents preparing for IEP meetings. General information only; not legal advice.",
+      "url": "https://iepreadykit.com/",
+      "offers": {
+        "@type": "Offer",
+        "price": "14.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/PreOrder",
+        "url": "https://iepreadykit.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"What is an IEP?","acceptedAnswer":{"@type":"Answer","text":"An Individualized Education Program (IEP) is a written plan for a child who qualifies for special education services under the Individuals with Disabilities Education Act (IDEA). It describes the child's needs, goals, services and supports."}},
+        {"@type":"Question","name":"How do I ask the school to evaluate my child?","acceptedAnswer":{"@type":"Answer","text":"You can ask in writing. Many parents send a dated letter or email to the principal or special education director and keep a copy. The kit includes a template letter."}},
+        {"@type":"Question","name":"How long does the school have to evaluate my child?","acceptedAnswer":{"@type":"Answer","text":"Under IDEA, the initial evaluation generally must be finished within 60 days after you give consent, unless your state sets a different timeline. Check your state education department for the rule that applies to you."}},
+        {"@type":"Question","name":"Is this legal advice?","acceptedAnswer":{"@type":"Answer","text":"No. The kit gives general information about IEPs. It is not legal advice and does not guarantee any outcome from your school."}}
+      ]
+    }
+  ]
+}
+</script>
 
-  /* Announcement bar */
-  .announce{
-    background:var(--navy);color:#fff;text-align:center;
-    font-size:14px;font-weight:500;padding:10px 16px
-  }
-  .announce strong{color:var(--gold)}
-
-  /* Nav */
-  nav{
-    position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);
-    backdrop-filter:blur(8px);border-bottom:1px solid var(--line)
-  }
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
-  .logo{font-weight:800;color:var(--navy);font-size:18px;text-decoration:none;display:flex;align-items:center;gap:10px}
-  .logo-mark{
-    width:34px;height:34px;border-radius:10px;
-    background:linear-gradient(135deg,var(--navy),#2f5a8c);
-    color:var(--gold);display:grid;place-items:center;font-size:15px;font-weight:800
-  }
-  .nav-cta{padding:11px 20px;font-size:15px;border-radius:12px}
-
-  /* Hero */
-  .hero{
-    background:
-      radial-gradient(900px 500px at 90% -10%, #fde7cc 0%, transparent 60%),
-      linear-gradient(180deg,var(--bg),#ffffff 85%);
-    padding:72px 0 80px;
-  }
-  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
-  .hero p.sub{font-size:19px;color:var(--muted);margin:20px 0 30px;max-width:540px}
-  .hero-ctas{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
-  .hero-fine{font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 16px}
-  .hero-fine span::before{content:"✓ ";color:var(--orange-dark);font-weight:700}
-
-  .hero-visual{position:relative;min-height:480px}
-  .photo-placeholder{
-    position:absolute;inset:0 40px 60px 0;border-radius:var(--radius);
-    background:
-      linear-gradient(160deg,rgba(31,58,95,.10),rgba(248,194,122,.35)),
-      repeating-linear-gradient(45deg,#e9eff7 0 14px,#f4f8fc 14px 28px);
-    border:2px dashed #b9c8da;display:grid;place-items:center;text-align:center;
-    padding:24px;color:var(--navy);font-size:14px;box-shadow:var(--shadow)
-  }
-  .photo-placeholder b{display:block;font-size:15px;margin-bottom:6px}
-
-  /* CSS 3D-ish kit mockup */
-  .kit{position:absolute;right:0;bottom:0;width:70%;height:300px}
-  .pdf-stack{position:absolute;left:0;top:30px;width:150px;height:200px}
-  .pdf-stack div{
-    position:absolute;inset:0;background:#fff;border-radius:8px;
-    box-shadow:0 10px 22px -10px rgba(31,58,95,.5);border:1px solid var(--line);
-    padding:14px;font-size:9px;color:var(--navy);font-weight:700
-  }
-  .pdf-stack div:nth-child(1){transform:rotate(-8deg) translate(-6px,6px)}
-  .pdf-stack div:nth-child(2){transform:rotate(-3deg) translate(-2px,2px)}
-  .pdf-stack div:nth-child(3){transform:rotate(4deg)}
-  .pdf-stack div:nth-child(3)::after{
-    content:"";position:absolute;left:14px;right:14px;top:34px;height:6px;border-radius:3px;
-    background:linear-gradient(90deg,var(--orange),var(--gold));
-    box-shadow:0 16px 0 -1px #e9eff7,0 32px 0 -1px #e9eff7,0 48px 0 -1px #e9eff7,0 64px 0 -1px #e9eff7
-  }
-  .binder{
-    position:absolute;left:150px;top:0;width:190px;height:250px;border-radius:12px;
-    background:linear-gradient(160deg,var(--navy),#2c4f7d);
-    box-shadow:0 22px 40px -16px rgba(31,58,95,.7);transform:rotate(3deg);
-    display:flex;flex-direction:column;justify-content:flex-end;padding:18px;color:#fff
-  }
-  .binder::before{
-    content:"";position:absolute;left:-10px;top:24px;bottom:24px;width:10px;border-radius:6px 0 0 6px;
-    background:var(--orange)
-  }
-  .binder .label{background:#fff;color:var(--navy);border-radius:8px;padding:12px;text-align:center}
-  .binder .label small{display:block;font-size:10px;color:var(--muted);font-weight:600}
-  .binder .label strong{font-size:14px}
-  .tablet{
-    position:absolute;right:-6px;top:20px;width:170px;height:230px;border-radius:22px;
-    background:#1b2330;padding:10px;box-shadow:0 26px 40px -18px rgba(0,0,0,.5);transform:rotate(-4deg)
-  }
-  .tablet .screen{background:#fff;border-radius:14px;height:100%;padding:14px;font-size:10px;color:var(--text)}
-  .tablet .screen h4{color:var(--navy);font-size:11px;margin-bottom:8px}
-  .tablet .row{display:flex;gap:6px;align-items:center;padding:5px 0;border-bottom:1px solid var(--line)}
-  .tablet .box{width:11px;height:11px;border-radius:3px;border:1.5px solid var(--navy);flex:none;position:relative}
-  .tablet .box.on{background:var(--orange);border-color:var(--orange)}
-  .mock-tag{
-    position:absolute;left:8px;bottom:-4px;background:var(--navy);color:#fff;
-    font-size:11px;font-weight:700;padding:6px 12px;border-radius:999px;letter-spacing:.04em
-  }
-
-  /* Pain */
-  .pain{background:var(--bg)}
-  .cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-  .card{
-    background:#fff;border-radius:var(--radius);padding:28px;box-shadow:0 10px 30px -22px rgba(31,58,95,.5);
-    border:1px solid var(--line)
-  }
-  .icon{
-    width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:24px;
-    background:linear-gradient(135deg,#fff3e6,var(--gold));margin-bottom:18px
-  }
-  .card p{color:var(--muted);font-size:15px;margin-top:8px}
-  .pain-close{text-align:center;margin-top:44px;font-size:18px;color:var(--navy);font-weight:600}
-
-  /* Inside the kit */
-  .kit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-  .kit-card{
-    background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
-    box-shadow:0 12px 30px -22px rgba(31,58,95,.5);display:flex;flex-direction:column
-  }
-  .thumb{
-    height:180px;background:linear-gradient(160deg,#fff,var(--bg));
-    border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:22px
-  }
-  .thumb .page{
-    width:120px;height:150px;background:#fff;border-radius:6px;box-shadow:0 10px 20px -10px rgba(31,58,95,.5);
-    border:1px solid var(--line);padding:12px 10px;font-size:8px;color:var(--navy);font-weight:700;
-    display:flex;flex-direction:column;gap:6px;transform:rotate(-2deg)
-  }
-  .thumb .page i{display:block;height:5px;border-radius:3px;background:#e4ebf4}
-  .thumb .page i.o{background:var(--orange)}
-  .thumb .page i.g{background:var(--gold)}
-  .kit-body{padding:24px 26px 28px}
-  .kit-body p{color:var(--muted);font-size:15px;margin-top:6px}
-  .pill{
-    display:inline-block;font-size:12px;font-weight:600;color:var(--navy);background:var(--bg);
-    padding:4px 10px;border-radius:999px;margin-top:14px
-  }
-
-  /* How it works */
-  .how{background:var(--navy);color:#fff}
-  .how h2{color:#fff}
-  .how .eyebrow{background:rgba(248,194,122,.18);color:var(--gold)}
-  .how .section-head p{color:#c8d6e8}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
-  .step{
-    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);
-    padding:32px 28px;text-align:left
-  }
-  .step-num{
-    width:44px;height:44px;border-radius:50%;background:var(--orange);color:#fff;
-    font-weight:800;display:grid;place-items:center;margin-bottom:18px;font-size:18px
-  }
-  .step .icon{background:rgba(248,194,122,.2);color:var(--gold)}
-  .step h3{color:#fff}
-  .step p{color:#c8d6e8;font-size:15px;margin-top:8px}
-
-  /* Before / After */
-  .compare{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-  .compare-col{border-radius:var(--radius);padding:36px 34px;border:1px solid var(--line)}
-  .compare-col.before{background:#f6f6f8}
-  .compare-col.after{
-    background:linear-gradient(180deg,#fff,#fff8ef);border:2px solid var(--orange);
-    box-shadow:var(--shadow)
-  }
-  .compare-col h3{font-size:22px;margin-bottom:18px}
-  .compare-col ul{list-style:none;display:grid;gap:14px}
-  .compare-col li{position:relative;padding-left:34px;font-size:16px;color:var(--text)}
-  .compare-col li::before{position:absolute;left:0;top:0;font-weight:800;font-size:18px}
-  .before li::before{content:"✕";color:#9aa5b5}
-  .after li::before{content:"✓";color:var(--orange-dark)}
-
-  /* Testimonial placeholder */
-  .proof{background:var(--bg)}
-  .placeholder-box{
-    max-width:760px;margin:0 auto;border:2px dashed #b9c8da;border-radius:var(--radius);
-    padding:48px 28px;text-align:center;color:var(--navy);background:#fff
-  }
-  .placeholder-box strong{display:block;font-size:18px;margin-bottom:8px}
-  .placeholder-box span{color:var(--muted);font-size:15px}
-
-  /* Pricing */
-  .pricing{background:linear-gradient(180deg,#fff,var(--bg))}
-  .price-card{
-    max-width:560px;margin:0 auto;background:#fff;border-radius:28px;padding:44px 40px 36px;
-    box-shadow:0 30px 60px -28px rgba(31,58,95,.5);border:1px solid var(--line);position:relative;text-align:center
-  }
-  .price-badge{
-    position:absolute;top:-16px;left:50%;transform:translateX(-50%);
-    background:var(--gold);color:var(--navy);font-weight:800;font-size:13px;letter-spacing:.08em;
-    padding:8px 18px;border-radius:999px;text-transform:uppercase;white-space:nowrap
-  }
-  .price-card h3{font-size:24px}
-  .price{display:flex;align-items:flex-start;justify-content:center;gap:4px;margin:14px 0 4px;color:var(--navy)}
-  .price .cur{font-size:26px;font-weight:700;margin-top:10px}
-  .price .amt{font-size:84px;font-weight:800;line-height:1}
-  .price-note{color:var(--muted);font-size:15px;margin-bottom:26px}
-  .stack{list-style:none;text-align:left;margin:0 0 28px;display:grid;gap:12px}
-  .stack li{display:flex;gap:12px;align-items:flex-start;font-size:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
-  .stack li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:#fff3e6;color:var(--orange-dark);font-weight:800;display:grid;place-items:center;font-size:13px}
-  .trust{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 22px;margin-top:22px;font-size:14px;color:var(--muted)}
-  .guarantee{
-    display:flex;align-items:center;gap:14px;text-align:left;margin-top:26px;padding:16px 18px;
-    border-radius:16px;background:#f0f6ff;border:1px solid #d7e4f5
-  }
-  .seal{
-    flex:none;width:60px;height:60px;border-radius:50%;border:3px solid var(--gold);
-    display:grid;place-items:center;text-align:center;font-size:11px;font-weight:800;color:var(--navy);line-height:1.1
-  }
-  .guarantee p{font-size:14px;color:var(--muted)}
-  .guarantee strong{color:var(--navy)}
-
-  /* FAQ */
-  .faq{max-width:780px;margin:0 auto;display:grid;gap:14px}
-  details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:0 24px;box-shadow:0 8px 20px -18px rgba(31,58,95,.5)}
-  summary{
-    cursor:pointer;list-style:none;padding:20px 0;font-weight:600;color:var(--navy);font-size:17px;
-    display:flex;justify-content:space-between;align-items:center;gap:16px
-  }
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";font-size:26px;color:var(--orange-dark);font-weight:500;line-height:1}
-  details[open] summary::after{content:"–"}
-  details p{padding:0 0 22px;color:var(--muted);font-size:16px}
-
-  /* Final CTA */
-  .final{background:var(--navy);color:#fff;text-align:center;padding:80px 0}
-  .final h2{color:#fff}
-  .final p{color:#c8d6e8;margin:14px auto 30px;max-width:560px}
-  .final .btn{font-size:20px}
-
-  /* Footer */
-  footer{background:#122742;color:#a9bbd2;padding:48px 0 36px;font-size:14px}
-  footer .cols{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;margin-bottom:28px}
-  footer a{text-decoration:none;color:#d6e2f2;margin-right:18px}
-  footer .disclaimer{
-    border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:13px;line-height:1.7;color:#8fa3bd
-  }
-  footer .disclaimer strong{color:#e8f0fa}
-
-  /* Mockup label */
-  .mockup-flag{
-    position:fixed;right:14px;bottom:14px;z-index:50;background:#fff3e6;color:var(--orange-dark);
-    border:1px solid var(--orange);font-weight:700;font-size:12px;padding:6px 12px;border-radius:999px
-  }
-
-  /* Responsive */
-  @media (max-width:980px){
-    .hero-grid{grid-template-columns:1fr;gap:40px}
-    .hero-visual{min-height:440px}
-    .cards-4{grid-template-columns:repeat(2,1fr)}
-    .kit-grid{grid-template-columns:repeat(2,1fr)}
-  }
-  @media (max-width:720px){
-    section{padding:64px 0}
-    .announce{font-size:13px}
-    .hero{padding:44px 0 56px}
-    .hero-visual{min-height:380px}
-    .photo-placeholder{inset:0 0 40px 0}
-    .kit{width:100%;height:260px}
-    .pdf-stack{width:120px;height:160px;top:24px}
-    .binder{left:110px;width:160px;height:210px}
-    .tablet{width:140px;height:190px;top:10px;right:0}
-    .cards-4,.kit-grid,.steps,.compare{grid-template-columns:1fr}
-    .nav-cta{padding:10px 14px;font-size:14px}
-    .btn{font-size:17px;padding:16px 24px;width:100%}
-    .hero-ctas .btn{width:100%}
-    .price-card{padding:40px 22px 28px}
-    .price .amt{font-size:72px}
-    .compare-col{padding:28px 22px}
-    footer .cols{flex-direction:column}
-  }
-  @media (max-width:420px){
-    .logo span.name{display:none}
-  }
-</style>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -332,7 +63,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','3355007808034064');
 fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3355007808034064&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=3355007808034064&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
 <script>
 document.addEventListener('click',function(e){var a=e.target.closest('a[href*="buy.stripe.com"]');if(a&&window.fbq){fbq('track','InitiateCheckout',{value:14.00,currency:'USD',content_name:'IEP Ready Kit'});}});
@@ -340,332 +71,236 @@ document.addEventListener('click',function(e){var a=e.target.closest('a[href*="b
 </head>
 <body>
 
-<!-- 1. Announcement bar -->
-<div class="announce">
-  <strong>Pre-sale</strong> — printable kit delivered digitally by email within 7 days
-</div>
+<!-- Icon sprite (decorative; each use is aria-hidden) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></symbol>
+  <symbol id="i-papers" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="16" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/><path d="M4 7v12a2 2 0 0 0 2 2h9"/></symbol>
+  <symbol id="i-note" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+  <symbol id="i-checklist" viewBox="0 0 24 24"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6.5h9M11 12.5h9M11 18.5h9"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 15l4-4 3 3 5-6"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+</svg>
 
-<!-- Nav -->
-<nav>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-header">
   <div class="wrap">
-    <a class="logo" href="#top"><span class="logo-mark">IEP</span><span class="name">IEP Ready Kit</span></a>
-    <a class="btn nav-cta" href="https://buy.stripe.com/00w8wRgrg82h6dLbazaAw00" target="_blank" rel="noopener noreferrer">Get the Kit — $14</a>
-  </div>
-</nav>
-
-<!-- 2. Hero -->
-<header class="hero" id="top">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">For parents preparing for an IEP meeting</span>
-      <h1>Walk into your child's IEP meeting prepared, calm and confident.</h1>
-      <p class="sub">
-        Printable checklists, ready-to-use letter templates and a question script
-        so you know what to ask, what to request and what to write down, before you sit at the table.
-      </p>
-      <div class="hero-ctas">
-        <a class="btn" href="https://buy.stripe.com/00w8wRgrg82h6dLbazaAw00" target="_blank" rel="noopener noreferrer">Get the Kit — $14</a>
-        <div class="hero-fine">
-          <span>Pre-sale</span>
-          <span>Digital delivery by email</span>
-          <span>One-time payment</span>
-          <span>No subscription</span>
-          <span>30-day money-back guarantee</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-visual" aria-label="Kit mockup and lifestyle photo placeholder">
-      <!-- Lifestyle photo placeholder -->
-      <div class="photo-placeholder" style="background:url(hero.jpg) center/cover no-repeat;"></div>
-
-      <!-- 3D-style kit mockup built with CSS -->
-      <div class="kit">
-        <div class="pdf-stack">
-          <div>IEP CHECKLIST<br>Page 1 of 6</div>
-          <div>LETTER TEMPLATE<br>Page 2 of 6</div>
-          <div>QUESTION SCRIPT<br><br>Page 3 of 6</div>
-        </div>
-        <div class="binder">
-          <div class="label">
-            <small>IEP READY KIT</small>
-            <strong>Meeting Binder</strong>
-          </div>
-        </div>
-        <div class="tablet">
-          <div class="screen">
-            <h4>Meeting checklist</h4>
-            <div class="row"><span class="box on"></span>Gather last report card</div>
-            <div class="row"><span class="box on"></span>Write 3 top concerns</div>
-            <div class="row"><span class="box"></span>Review draft goals</div>
-            <div class="row"><span class="box"></span>Request written notes</div>
-            <div class="row"><span class="box"></span>Ask about next steps</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <a class="logo" href="./" aria-label="IEP Ready Kit, home"><span class="logo-mark" aria-hidden="true">IEP</span><span class="logo-name">IEP Ready Kit</span></a>
+    <nav class="header-nav" aria-label="Main">
+      <a href="#what-is-an-iep">What is an IEP?</a>
+      <a href="#inside">What's inside</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="https://buy.stripe.com/00w8wRgrg82h6dLbazaAw00" target="_blank" rel="noopener noreferrer">Get the Kit — $14<span class="sr-only"> (opens secure checkout in a new tab)</span></a>
   </div>
 </header>
 
-<!-- 3. Pain -->
-<section class="pain" id="pain">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Sound familiar?</span>
-      <h2>You love your child. The meeting packet is 40 pages long.</h2>
-      <p>Most parents aren't short on care. They're short on time, plain-English explanations and a clear plan before the meeting starts.</p>
+<main id="main">
+
+<!-- Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">For parents of autistic children in the U.S.</p>
+      <h1 id="hero-title">Feel ready for your child's IEP meeting.</h1>
+      <p class="lead">The IEP Ready Kit is a printable set of checklists, letter templates and meeting questions. It helps you organize what you know about your child, ask clear questions and keep good notes.</p>
+      <a class="btn" href="https://buy.stripe.com/00w8wRgrg82h6dLbazaAw00" target="_blank" rel="noopener noreferrer">Get the Kit — $14<span class="sr-only"> (opens secure checkout in a new tab)</span></a>
+      <ul class="hero-notes">
+        <li>Pre-sale price. One-time payment, no subscription.</li>
+        <li>PDF delivered by email within 7 days.</li>
+      </ul>
+      <p class="mini-disclaimer">General information only. Not legal advice. <a href="#disclaimer">Read the full note</a>.</p>
     </div>
-    <div class="cards-4">
-      <div class="card">
-        <div class="icon">❓</div>
-        <h3>Not sure what to ask</h3>
-        <p>You know something isn't working, but you can't tell which questions will get you useful answers.</p>
-      </div>
-      <div class="card">
-        <div class="icon">👥</div>
-        <h3>Feeling outnumbered</h3>
-        <p>The table is full of school staff who know the process. You're the one person there for your child alone.</p>
-      </div>
-      <div class="card">
-        <div class="icon">📖</div>
-        <h3>Confusing terms</h3>
-        <p>FAPE, LRE, accommodations, modifications. Every acronym makes the meeting feel harder to follow.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🧠</div>
-        <h3>Forgetting key points</h3>
-        <p>You planned to bring up the bus issue and the new reading goal, and then the meeting ended.</p>
-      </div>
-    </div>
-    <p class="pain-close">You don't need to be an expert. You need a plan.</p>
+    <img class="hero-art" src="images/hero-illustration.svg" width="480" height="400" alt="Illustration of a navy binder, a printed checklist with check marks, and a card with a question mark on a table.">
   </div>
 </section>
 
-<!-- 4. What's inside -->
-<section id="inside">
+<!-- Problem -->
+<section class="bg-sand" aria-labelledby="problem-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">What's inside the kit</span>
-      <h2>Six printable parts, ready for your next meeting</h2>
-      <p>Print what you need, fill it in at the kitchen table and bring it to the meeting in a single binder.</p>
+      <h2 id="problem-title">The IEP process can feel like a lot.</h2>
+      <p>Most parents are not short on care. They are short on time, plain-English explanations and a simple plan before the meeting starts.</p>
     </div>
-    <div class="kit-grid">
-      <article class="kit-card">
-        <div class="thumb"><div class="page"><i class="o"></i><i></i><i></i><i class="g"></i><i></i><i></i></div></div>
-        <div class="kit-body">
-          <h3>Step-by-step checklists</h3>
-          <p>Before, during and after the meeting, so nothing important gets skipped.</p>
-          <span class="pill">Preview page</span>
-        </div>
-      </article>
-      <article class="kit-card">
-        <div class="thumb"><div class="page"><i class="o"></i><i></i><i></i><i></i><i class="g"></i><i></i></div></div>
-        <div class="kit-body">
-          <h3>Ready-to-use letter templates</h3>
-          <p>Fill-in-the-blank letters to request an evaluation, a meeting or written notes.</p>
-          <span class="pill">Preview page</span>
-        </div>
-      </article>
-      <article class="kit-card">
-        <div class="thumb"><div class="page"><i class="o"></i><i></i><i></i><i></i><i></i><i class="g"></i></div></div>
-        <div class="kit-body">
-          <h3>Meeting question script</h3>
-          <p>Organized questions for each area of your child's plan, with space for notes.</p>
-          <span class="pill">Preview page</span>
-        </div>
-      </article>
-      <article class="kit-card">
-        <div class="thumb"><div class="page"><i class="o"></i><i class="g"></i><i></i><i></i><i></i><i></i></div></div>
-        <div class="kit-body">
-          <h3>Progress tracker</h3>
-          <p>A simple place to log goals, updates and how your child is doing over time.</p>
-          <span class="pill">Preview page</span>
-        </div>
-      </article>
-      <article class="kit-card">
-        <div class="thumb"><div class="page"><i class="o"></i><i></i><i class="g"></i><i></i><i></i><i></i></div></div>
-        <div class="kit-body">
-          <h3>Plain-English glossary</h3>
-          <p>IEP, FAPE, LRE and other common terms explained in everyday language.</p>
-          <span class="pill">Preview page</span>
-        </div>
-      </article>
-      <article class="kit-card">
-        <div class="thumb"><div class="page"><i class="o"></i><i></i><i></i><i></i><i class="g"></i><i></i></div></div>
-        <div class="kit-body">
-          <h3>Parent binder pages</h3>
-          <p>Dividers and labeled sections so your reports, notes and letters stay in order.</p>
-          <span class="pill">Preview page</span>
-        </div>
-      </article>
+    <div class="grid grid-4">
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-question"/></svg></span><h3>Not sure what to ask</h3><p>You know what you see at home. It can be hard to know which questions to bring to the table.</p></div>
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-book"/></svg></span><h3>Unfamiliar terms</h3><p>FAPE, LRE, accommodations, modifications. Acronyms can make a meeting hard to follow.</p></div>
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-papers"/></svg></span><h3>A lot of paper</h3><p>Reports, drafts and emails pile up. It helps to keep them in one place.</p></div>
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-note"/></svg></span><h3>Hard to remember in the moment</h3><p>It is easy to forget a point once the meeting begins. Writing it down ahead of time helps.</p></div>
     </div>
+    <p class="center" style="margin-top:32px;font-weight:600;color:var(--navy)">You know your child best. A little structure can help you share that.</p>
   </div>
 </section>
 
-<!-- 5. How it works -->
-<section class="how" id="how">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">How it works</span>
-      <h2>From order to meeting day in three steps</h2>
-      <p>This is a pre-sale. The printable kit is delivered digitally by email within 7 days.</p>
+<!-- What is an IEP -->
+<section id="what-is-an-iep" aria-labelledby="iep-title">
+  <div class="wrap narrow">
+    <h2 id="iep-title">What is an IEP?</h2>
+    <p>An Individualized Education Program, or IEP, is a written plan for a child who qualifies for special education services at a U.S. public school. It is created under a federal law called the Individuals with Disabilities Education Act (IDEA).</p>
+    <p>An IEP usually describes:</p>
+    <ul>
+      <li>your child's strengths and needs,</li>
+      <li>yearly goals,</li>
+      <li>the services and supports the school will provide,</li>
+      <li>and how progress will be shared with you.</li>
+    </ul>
+    <p>Autism is one of the disability categories listed in IDEA. Parents are members of the IEP team, so your knowledge of your child matters at the meeting.</p>
+    <div class="callout">
+      <p><strong>Rules vary.</strong> IDEA is a federal law, but states and school districts have their own timelines and forms. Check with your state education department or school for the rules that apply to you.</p>
     </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="icon">🛒</div>
-        <h3>Order</h3>
-        <p>Pay $14 once. No account, no subscription.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="icon">📧</div>
-        <h3>Receive by email</h3>
-        <p>Download the printable PDF pages and print the ones you need.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="icon">🤝</div>
-        <h3>Walk in prepared</h3>
-        <p>Bring your binder, your questions and your notes to the meeting.</p>
-      </div>
-    </div>
+    <p>Learn more from official sources: the <a href="https://sites.ed.gov/idea/" target="_blank" rel="noopener noreferrer">U.S. Department of Education IDEA website</a> and the <a href="https://www.parentcenterhub.org/" target="_blank" rel="noopener noreferrer">Center for Parent Information and Resources</a>.</p>
   </div>
 </section>
 
-<!-- 6. Before / After -->
-<section id="compare">
+<!-- What's inside -->
+<section id="inside" class="bg-soft" aria-labelledby="inside-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Before and after</span>
-      <h2>The difference a plan makes</h2>
+      <h2 id="inside-title">What is in the kit</h2>
+      <p>Six printable parts. Print what you need, fill it in at your own pace and bring it to the meeting in one binder.</p>
     </div>
-    <div class="compare">
-      <div class="compare-col before">
-        <h3>Without the kit</h3>
-        <ul>
-          <li>Scrambling for papers the night before</li>
-          <li>Unsure which questions to ask</li>
-          <li>Leaving with acronyms you didn't understand</li>
-          <li>Remembering your key concerns only after the meeting</li>
+    <div class="grid grid-3">
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-checklist"/></svg></span><h3>Step-by-step checklists</h3><p>What to do before, during and after the meeting.</p></div>
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><h3>Letter templates</h3><p>Fill-in-the-blank letters to request an evaluation, a meeting or written notes.</p></div>
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><h3>Meeting question script</h3><p>Questions organized by topic, with space to write down answers.</p></div>
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-chart"/></svg></span><h3>Progress tracker</h3><p>A simple place to log goals, updates and how things are going over time.</p></div>
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-book"/></svg></span><h3>Plain-English glossary</h3><p>IEP, FAPE, LRE and other common terms in everyday language.</p></div>
+      <div class="card"><span class="icon"><svg aria-hidden="true"><use href="#i-folder"/></svg></span><h3>Parent binder pages</h3><p>Dividers and labeled sections to keep reports, notes and letters in order.</p></div>
+    </div>
+    <div class="placeholder" style="margin-top:28px" role="note"><strong>[ADD SAMPLE PAGE PREVIEW]</strong><br>Add a real preview image of one kit page, plus the page count, once the PDF is final.</div>
+  </div>
+</section>
+
+<!-- Who it's for -->
+<section aria-labelledby="who-title">
+  <div class="wrap">
+    <div class="section-head"><h2 id="who-title">Is this kit right for you?</h2></div>
+    <div class="two-col">
+      <div class="card">
+        <h3>It may help if you</h3>
+        <ul class="checks">
+          <li>are a parent or caregiver of an autistic child in a U.S. public school,</li>
+          <li>have an IEP meeting, evaluation request or yearly review coming up,</li>
+          <li>like having printed pages and a binder to bring along,</li>
+          <li>want plain-English explanations of common terms.</li>
         </ul>
       </div>
-      <div class="compare-col after">
-        <h3>With the kit</h3>
-        <ul>
-          <li>One binder, organized and ready to go</li>
-          <li>A question script for every part of the plan</li>
-          <li>A glossary to look up terms on the spot</li>
-          <li>A checklist that keeps your priorities on the page</li>
+      <div class="card">
+        <h3>It is not</h3>
+        <ul class="crosses">
+          <li>legal advice, or a replacement for an attorney or advocate,</li>
+          <li>a guarantee of any result from your school,</li>
+          <li>a guide to every state's specific rules,</li>
+          <li>affiliated with the U.S. Department of Education or any school district.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- 8. Pricing -->
-<section class="pricing" id="pricing">
+<!-- How it works -->
+<section class="bg-sand" aria-labelledby="how-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Pricing</span>
-      <h2>Everything you need, one payment</h2>
+      <h2 id="how-title">How it works</h2>
+      <p>The kit is in pre-sale. It is delivered by email as a PDF within 7 days of your order.</p>
     </div>
+    <ol class="steps">
+      <li><h3>Order</h3><p>Pay $14 once through secure checkout. No account and no subscription.</p></li>
+      <li><h3>Get it by email</h3><p>Download the PDF and print the pages you need.</p></li>
+      <li><h3>Prepare</h3><p>Fill in your notes, then bring your binder to the meeting.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Testimonials placeholder -->
+<section aria-labelledby="proof-title">
+  <div class="wrap narrow">
+    <h2 id="proof-title" class="center">What parents say</h2>
+    <div class="placeholder" role="note"><strong>[ADD TESTIMONIAL]</strong><br>Add real, permission-based parent feedback here. Remove this section if there is none yet. Do not publish invented quotes.</div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="bg-soft" aria-labelledby="price-title">
+  <div class="wrap">
     <div class="price-card">
-      <span class="price-badge">Pre-sale</span>
-      <h3>IEP Ready Kit</h3>
-      <div class="price"><span class="cur">$</span><span class="amt">14</span></div>
-      <p class="price-note">Pre-sale · One-time payment · Digital PDF · Delivered by email within 7 days</p>
-      <ul class="stack">
-        <li>Step-by-step IEP checklists</li>
-        <li>Ready-to-use letter templates</li>
+      <h2 id="price-title">IEP Ready Kit</h2>
+      <p class="price"><small>$</small>14</p>
+      <p class="price-note">Pre-sale · One-time payment · PDF by email within 7 days</p>
+      <ul class="checks">
+        <li>Step-by-step checklists</li>
+        <li>Letter templates</li>
         <li>Meeting question script</li>
         <li>Progress tracker</li>
-        <li>Plain-English glossary (IEP, FAPE, LRE and more)</li>
+        <li>Plain-English glossary</li>
         <li>Printable parent binder pages</li>
       </ul>
-      <a class="btn btn-block" href="https://buy.stripe.com/00w8wRgrg82h6dLbazaAw00" target="_blank" rel="noopener noreferrer">Get the Kit — $14</a>
-      <div class="trust">
-        <span>🔒 Secure checkout</span>
-        <span>💳 Visa · Mastercard · Amex</span>
-        <span>🍏 Apple Pay · Google Pay</span>
-      </div>
-      <div class="guarantee">
-        <div class="seal">30<br>DAY</div>
-        <p><strong>30-day money-back guarantee.</strong> If the kit isn't useful for you, email us within 30 days for a full refund.</p>
-      </div>
+      <a class="btn btn-block" href="https://buy.stripe.com/00w8wRgrg82h6dLbazaAw00" target="_blank" rel="noopener noreferrer">Get the Kit — $14<span class="sr-only"> (opens secure checkout in a new tab)</span></a>
+      <p class="price-note" style="margin:14px 0 0">Payment is handled by Stripe. Questions about refunds? See our <a href="refunds.html">refund policy</a>.</p>
     </div>
   </div>
 </section>
 
-<!-- 9. FAQ -->
-<section id="faq">
+<!-- FAQ -->
+<section id="faq" aria-labelledby="faq-title">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Questions parents ask</h2>
-    </div>
+    <div class="section-head"><h2 id="faq-title">Questions parents ask</h2><p>These answers are general information. Rules can differ by state and district.</p></div>
     <div class="faq">
-      <details>
-        <summary>What format is the kit?</summary>
-        <p>It's a printable PDF. You can print at home or at a local print shop, or view it on a tablet and fill it in digitally.</p>
-      </details>
-      <details>
-        <summary>When will I get it?</summary>
-        <p>This is a pre-sale. The printable kit is delivered digitally by email within 7 days. You'll get a download link in your inbox.</p>
-      </details>
-      <details>
-        <summary>Is this legal advice?</summary>
-        <p>No. The IEP Ready Kit is an educational resource only. It does not give legal advice and does not replace advice from a licensed attorney, an advocate or your school's special education team.</p>
-      </details>
-      <details>
-        <summary>Is it for every state?</summary>
-        <p>Yes. The kit is general guidance that applies to IEP meetings across the United States. Your state may have its own rules, so check your state's education department website for details specific to you.</p>
-      </details>
-      <details>
-        <summary>What is an IEP?</summary>
-        <p>An Individualized Education Program is a written plan that a US public school creates for students who qualify for special education services under IDEA. The kit explains the basic terms.</p>
-      </details>
-      <details>
-        <summary>What if I don't like it?</summary>
-        <p>You're covered by a 30-day money-back guarantee. Email us within 30 days of purchase for a full refund.</p>
-      </details>
+      <details><summary>What is an IEP?</summary><div><p>An Individualized Education Program (IEP) is a written plan for a child who qualifies for special education services under the Individuals with Disabilities Education Act (IDEA). It describes the child's needs, goals, services and supports.</p></div></details>
+      <details><summary>How do I ask the school to evaluate my child?</summary><div><p>You can ask in writing. Many parents send a dated letter or email to the principal or special education director and keep a copy. The kit includes a template letter you can adapt.</p></div></details>
+      <details><summary>How long does the school have to evaluate my child?</summary><div><p>Under IDEA, the initial evaluation generally must be finished within 60 days after you give consent, unless your state sets a different timeline. Some states use a different number of days, so check your state education department.</p></div></details>
+      <details><summary>Who is at an IEP meeting?</summary><div><p>The IEP team usually includes the parents, at least one general education teacher, at least one special education teacher or provider, a school representative, and someone who can explain evaluation results. Parents may also invite people who know the child well.</p></div></details>
+      <details><summary>What happens at the meeting?</summary><div><p>The team talks about your child's strengths, needs and goals, and what services and supports might help. You can ask questions, share what you see at home and ask for time to review before you agree.</p></div></details>
+      <details><summary>Do I have to agree with everything?</summary><div><p>No. You can ask questions, ask for changes and ask for time to think. If you still disagree, IDEA describes options such as mediation, a state complaint or a due process hearing. The school must give you a notice explaining your procedural safeguards. For help, consider a parent center, an advocate or an attorney.</p></div></details>
+      <details><summary>How often is an IEP reviewed?</summary><div><p>At least once a year. A child is also generally re-evaluated at least every three years, unless the parent and school agree it is not needed. You can ask for a meeting sooner if you have concerns.</p></div></details>
+      <details><summary>Does the kit work in every state?</summary><div><p>The kit is built around the federal IDEA process, so it is general. Your state or district may have different forms, names and timelines. Check your state education department's website for specifics.</p></div></details>
+      <details><summary>Is this legal advice?</summary><div><p>No. The kit is an educational resource. It does not replace advice from a licensed attorney, an advocate or your school's special education team, and it does not guarantee any outcome.</p></div></details>
+      <details><summary>What format is the kit, and when do I get it?</summary><div><p>It is a printable PDF. You can print at home or at a print shop, or fill it in on a tablet. The kit is in pre-sale and is sent by email within 7 days of your order.</p></div></details>
     </div>
   </div>
 </section>
 
-<!-- Final CTA -->
-<section class="final">
-  <div class="wrap">
-    <h2>Your next IEP meeting doesn't have to start from zero.</h2>
-    <p>Get the kit, print what you need and walk in with a plan.</p>
-    <a class="btn" href="https://buy.stripe.com/00w8wRgrg82h6dLbazaAw00" target="_blank" rel="noopener noreferrer">Get the Kit — $14</a>
+<!-- Official resources -->
+<section class="bg-soft" aria-labelledby="res-title">
+  <div class="wrap narrow">
+    <h2 id="res-title">Official resources</h2>
+    <ul class="links">
+      <li><a href="https://sites.ed.gov/idea/" target="_blank" rel="noopener noreferrer">U.S. Department of Education: IDEA website<span>Federal law, regulations and guidance.</span></a></li>
+      <li><a href="https://www.parentcenterhub.org/" target="_blank" rel="noopener noreferrer">Center for Parent Information and Resources<span>Parent training and information centers, with help finding one in your state.</span></a></li>
+    </ul>
   </div>
 </section>
 
-<!-- 10. Footer -->
-<footer>
+<!-- Final CTA + disclaimer -->
+<section class="bg-sand" id="disclaimer" aria-labelledby="final-title">
+  <div class="wrap narrow center">
+    <h2 id="final-title">Walk into your next meeting with a plan.</h2>
+    <p class="lead">Print what you need, write down what matters to you and bring it along.</p>
+    <p><a class="btn" href="https://buy.stripe.com/00w8wRgrg82h6dLbazaAw00" target="_blank" rel="noopener noreferrer">Get the Kit — $14<span class="sr-only"> (opens secure checkout in a new tab)</span></a></p>
+    <div class="callout" style="text-align:left">
+      <p><strong>Please read:</strong> The IEP Ready Kit gives general information about IEPs. It is not legal advice and does not create an attorney-client relationship. It does not guarantee any outcome from your child's school. IEP rules can vary by state and district. For advice about your situation, talk with a licensed attorney, an advocate or your parent center. This site is not affiliated with the U.S. Department of Education.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <strong style="color:#fff">IEP Ready Kit</strong><br>
-        iepreadykit.com
-      </div>
-      <div>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Refunds</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-    <div class="disclaimer">
-      <strong>Disclaimer:</strong> Educational resource only, not legal advice. The IEP Ready Kit does not create an attorney-client relationship and is not a substitute for professional advice. Requirements for IEPs can vary by state and school district. Results are not guaranteed.
-      <br><br>
-      © 2026 IEP Ready Kit. All rights reserved.
-    </div>
+    <strong style="color:#fff">IEP Ready Kit</strong>
+    <nav aria-label="Footer"><ul class="footer-links">
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="refunds.html">Refunds</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <p class="disclaimer">Educational resource only. Not legal advice. Results are not guaranteed. © 2026 IEP Ready Kit.</p>
   </div>
 </footer>
-
 
 </body>
 </html>
