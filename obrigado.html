@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Thank you — IEP Ready Kit</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:"Poppins",system-ui,sans-serif;background:#F7F4EE;color:#2b2b2b;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px}
+.card{background:#fff;max-width:560px;border-radius:18px;padding:40px 32px;box-shadow:0 10px 30px rgba(31,58,95,.12);text-align:center}
+h1{color:#1F3A5F;font-weight:800;margin:0 0 12px}
+p{line-height:1.6;margin:10px 0}
+a{color:#1F3A5F;font-weight:600}
+.check{font-size:48px}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','3355007808034064');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3355007808034064&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<script>
+(function(){
+  var id=new URLSearchParams(location.search).get('session_id')||'';
+  if(/^cs_(live|test)_[A-Za-z0-9]{20,}$/.test(id)){
+    var k='iep_purchase_'+id;
+    try{ if(localStorage.getItem(k)) return; localStorage.setItem(k,'1'); }catch(e){}
+    fbq('track','Purchase',{value:14.00,currency:'USD',content_name:'IEP Ready Kit',content_type:'product'},{eventID:id});
+  }
+})();
+</script>
+</head><body>
+<div class="card">
+<div class="check">✅</div>
+<h1>Thank you! Your order is confirmed.</h1>
+<p>You've reserved your <strong>IEP Ready Kit</strong>. A payment receipt is on its way to your email.</p>
+<p>Your printable kit will be delivered to that same email address when it launches. Keep an eye on your inbox (and your spam folder, just in case).</p>
+<p><a href="/">Back to IEP Ready Kit</a></p>
+</div>
+</body></html>
