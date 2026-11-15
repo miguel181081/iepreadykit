@@ -231,3 +231,4 @@ html{scroll-padding-top:84px}
   .hero-grid{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:32px}
   .hero-mock{margin:0;width:112%;max-width:none;margin-right:-12%}
 }
+.thanks .card p{margin-bottom:1em}
