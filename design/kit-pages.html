@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Kit page designs (source for mockups)</title>
+<style>
+  /* Each .page is US Letter at 100px/inch: 850 x 1100. Rendered to PNG for the site mockups. */
+  :root{--navy:#1F3A5F;--ink:#1B2B3C;--muted:#5A6878;--line:#C9D4E0;--soft:#EEF3F8;--cream:#FBF6EE;--orange:#C2610C;--peach:#F2A65A;--green:#2F7A55}
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff;font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;color:var(--ink)}
+  .page{width:850px;height:1100px;position:relative;overflow:hidden;background:#fff;padding:70px 72px 90px}
+  .serif{font-family:"New York","Iowan Old Style",Georgia,serif}
+  .band{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+  .num{width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;font-size:22px}
+  .band h1{margin:0;font-size:34px;color:var(--navy);letter-spacing:-.01em}
+  .intro{font-size:17px;color:var(--muted);margin:0 0 26px;line-height:1.5;max-width:640px}
+  h2{font-size:18px;color:var(--navy);margin:0 0 12px;text-transform:uppercase;letter-spacing:.06em}
+  .box{width:20px;height:20px;border:2.5px solid var(--navy);border-radius:5px;flex:none;margin-top:2px}
+  .box.on{background:var(--navy);position:relative}
+  .box.on::after{content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg)}
+  .item{display:flex;gap:12px;font-size:16.5px;line-height:1.4;margin-bottom:13px}
+  .lines i{display:block;border-bottom:1.5px solid var(--line);height:34px}
+  .card{border:2px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:20px}
+  .foot{position:absolute;left:72px;right:72px;bottom:38px;display:flex;justify-content:space-between;font-size:13px;color:var(--muted);border-top:1.5px solid var(--line);padding-top:12px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .tag{display:inline-block;background:var(--cream);color:var(--orange);font-weight:700;font-size:13px;padding:5px 12px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th{background:var(--navy);color:#fff;text-align:left;padding:12px 12px;font-size:14px;letter-spacing:.03em}
+  th:first-child{border-radius:10px 0 0 0} th:last-child{border-radius:0 10px 0 0}
+  td{border-bottom:1.5px solid var(--line);padding:0 12px;height:62px;vertical-align:middle}
+  td.ex{color:var(--muted);font-style:italic}
+  .hand{font-family:"Bradley Hand","Noteworthy","Segoe Print",cursive;color:#2B4C7E;font-size:19px}
+  .blank{display:inline-block;border-bottom:1.5px solid var(--ink);min-width:150px;height:22px;vertical-align:bottom}
+
+  /* Cover */
+  .cover{background:var(--navy);color:#fff;padding:0}
+  .cover .top{padding:84px 80px 0}
+  .cover .mark{display:flex;align-items:center;gap:14px;font-weight:800;font-size:22px;letter-spacing:.02em}
+  .cover .mark span{width:52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center}
+  .cover h1{font-size:92px;line-height:1;margin:120px 0 22px;letter-spacing:-.02em}
+  .cover .sub{font-size:28px;line-height:1.35;color:#D6E2F0;max-width:600px;margin:0}
+  .cover .peach{position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:var(--peach);opacity:.95}
+  .cover .soft{position:absolute;right:120px;top:210px;width:120px;height:120px;border-radius:50%;background:#2F5585}
+  .cover .bottom{position:absolute;left:0;right:0;bottom:0;background:var(--cream);color:var(--ink);padding:44px 80px 50px}
+  .cover .bottom h3{margin:0 0 16px;font-size:16px;text-transform:uppercase;letter-spacing:.1em;color:var(--orange)}
+  .cover ul{margin:0;padding:0;list-style:none;columns:2;column-gap:30px;font-size:19px;line-height:1.3}
+  .cover li{margin-bottom:12px;break-inside:avoid;display:flex;gap:10px}
+  .cover li b{color:var(--navy)}
+  .cover .note{margin-top:22px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<!-- 0. Cover -->
+<section class="page cover" id="p-cover">
+  <div class="peach"></div><div class="soft"></div>
+  <div class="top">
+    <div class="mark"><span><svg width="34" height="34" viewBox="0 0 64 64"><rect x="10" y="6" width="44" height="52" rx="7" fill="#1F3A5F"/><path d="M21 33l8 8 15-17" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>IEP READY KIT</div>
+    <h1 class="serif">Ready for<br>the IEP<br>meeting.</h1>
+    <p class="sub">A printable prep kit for parents and caregivers. Know what to bring, what to ask and what to do next.</p>
+  </div>
+  <div class="bottom">
+    <h3>Inside this kit</h3>
+    <ul>
+      <li><b>1</b> IEP meeting checklist</li>
+      <li><b>2</b> Parent concerns worksheet</li>
+      <li><b>3</b> Questions to ask</li>
+      <li><b>4</b> Goal-tracking sheets</li>
+      <li><b>5</b> Post-meeting follow-up template</li>
+    </ul>
+    <p class="note">General information for U.S. families. Not legal advice.</p>
+  </div>
+</section>
+
+<!-- 1. Meeting checklist -->
+<section class="page" id="p-checklist">
+  <div class="band"><div class="num">1</div><h1 class="serif">IEP Meeting Checklist</h1></div>
+  <p class="intro">Work through this list in the weeks before the meeting, on the day, and right after. Tick each box as you go.</p>
+  <div class="cols">
+    <div>
+      <span class="tag">Two weeks before</span>
+      <div class="item"><span class="box on"></span>Confirm the date, time and who will attend</div>
+      <div class="item"><span class="box on"></span>Ask for copies of any new reports or evaluations</div>
+      <div class="item"><span class="box on"></span>Re-read the current IEP and last progress report</div>
+      <div class="item"><span class="box"></span>Fill in the Parent Concerns Worksheet</div>
+      <div class="item"><span class="box"></span>Decide if someone will come with you</div>
+      <span class="tag" style="margin-top:14px">The day before</span>
+      <div class="item"><span class="box"></span>Pick your top 3 priorities</div>
+      <div class="item"><span class="box"></span>Mark the questions you most want answered</div>
+      <div class="item"><span class="box"></span>Put everything in one folder or binder</div>
+    </div>
+    <div>
+      <span class="tag">During the meeting</span>
+      <div class="item"><span class="box"></span>Write down each person's name and role</div>
+      <div class="item"><span class="box"></span>Share your child's strengths first</div>
+      <div class="item"><span class="box"></span>Bring up your top 3 concerns</div>
+      <div class="item"><span class="box"></span>Ask how each goal will be measured</div>
+      <div class="item"><span class="box"></span>Ask for time to review before you sign</div>
+      <span class="tag" style="margin-top:14px">Right after</span>
+      <div class="item"><span class="box"></span>Write a short summary while it's fresh</div>
+      <div class="item"><span class="box"></span>Send the follow-up letter within a few days</div>
+      <div class="item"><span class="box"></span>Add goals to your tracking sheet</div>
+    </div>
+  </div>
+  <div class="foot"><span>IEP Ready Kit</span><span>General information, not legal advice</span><span>Page 1</span></div>
+</section>
+
+<!-- 2. Parent concerns worksheet -->
+<section class="page" id="p-concerns">
+  <div class="band"><div class="num">2</div><h1 class="serif">Parent Concerns Worksheet</h1></div>
+  <p class="intro">You know your child better than anyone. Use this page to put what you see at home into words the team can act on.</p>
+  <div class="card"><h2>My child's strengths</h2><div class="lines"><i></i><i></i></div></div>
+  <div class="card"><h2>What I see at home</h2><div class="lines"><i></i><i></i><i></i></div></div>
+  <div class="card">
+    <h2>My top 3 concerns</h2>
+    <div class="item" style="margin:10px 0 0"><b style="color:var(--orange);font-size:18px">1</b><div class="lines" style="flex:1"><i></i></div></div>
+    <div class="item" style="margin:0"><b style="color:var(--orange);font-size:18px">2</b><div class="lines" style="flex:1"><i></i></div></div>
+    <div class="item" style="margin:0"><b style="color:var(--orange);font-size:18px">3</b><div class="lines" style="flex:1"><i></i></div></div>
+  </div>
+  <div class="card"><h2>What I'd like to see by next year</h2><div class="lines"><i></i><i></i></div></div>
+  <div class="foot"><span>IEP Ready Kit</span><span>General information, not legal advice</span><span>Page 2</span></div>
+</section>
+
+<!-- 3. Questions to ask -->
+<section class="page" id="p-questions">
+  <div class="band"><div class="num">3</div><h1 class="serif">Questions to Ask</h1></div>
+  <p class="intro">Circle the questions that matter most to you. Leave space to write the answer.</p>
+  <div class="cols">
+    <div>
+      <span class="tag">Where my child is now</span>
+      <div class="item"><span class="box"></span>What did the evaluation show?</div>
+      <div class="item"><span class="box"></span>Where is my child doing well?</div>
+      <div class="item"><span class="box"></span>Where does my child need more support?</div>
+      <span class="tag" style="margin-top:12px">Goals</span>
+      <div class="item"><span class="box"></span>How will this goal be measured?</div>
+      <div class="item"><span class="box"></span>How often will progress be checked?</div>
+      <div class="item"><span class="box"></span>What happens if the goal isn't met?</div>
+    </div>
+    <div>
+      <span class="tag">Services &amp; supports</span>
+      <div class="item"><span class="box"></span>Who will provide each service?</div>
+      <div class="item"><span class="box"></span>How many minutes a week, and where?</div>
+      <div class="item"><span class="box"></span>What accommodations will be used in class?</div>
+      <span class="tag" style="margin-top:12px">Next steps</span>
+      <div class="item"><span class="box"></span>When will I get a copy of the IEP?</div>
+      <div class="item"><span class="box"></span>How will you share progress with me?</div>
+      <div class="item"><span class="box"></span>Who do I contact with questions?</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:16px"><h2>Answers &amp; notes</h2><div class="lines"><i></i><i></i><i></i></div></div>
+  <div class="foot"><span>IEP Ready Kit</span><span>General information, not legal advice</span><span>Page 3</span></div>
+</section>
+
+<!-- 4. Goal tracking -->
+<section class="page" id="p-goals">
+  <div class="band"><div class="num">4</div><h1 class="serif">Goal-Tracking Sheet</h1></div>
+  <p class="intro">Copy each IEP goal here. Check in with the school and write down what you hear and see at home.</p>
+  <table>
+    <thead><tr><th style="width:30%">Goal</th><th style="width:22%">How it's measured</th><th style="width:14%">Date</th><th>What I heard / saw</th></tr></thead>
+    <tbody>
+      <tr><td class="hand">Ask for a break using a card</td><td class="hand">4 of 5 times</td><td class="hand">Oct 3</td><td class="hand">Used it twice this week!</td></tr>
+      <tr><td class="hand"></td><td class="hand"></td><td class="hand">Nov 7</td><td class="hand">Teacher says 3 of 5</td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="foot"><span>IEP Ready Kit</span><span>General information, not legal advice</span><span>Page 4</span></div>
+</section>
+
+<!-- 5. Follow-up template -->
+<section class="page" id="p-followup">
+  <div class="band"><div class="num">5</div><h1 class="serif">Post-Meeting Follow-Up</h1></div>
+  <p class="intro">Send this within a few days of the meeting. It puts what was agreed in writing and gives everyone a clear record.</p>
+  <div class="card" style="font-size:17px;line-height:2.1;padding:28px 32px">
+    <p style="margin:0">Dear <span class="blank"></span>,</p>
+    <p style="margin:0">Thank you for meeting with me on <span class="blank" style="min-width:120px"></span> about my child, <span class="blank"></span>.</p>
+    <p style="margin:0">I would like to confirm what we discussed:</p>
+    <div style="display:flex;gap:10px"><b>•</b><span class="blank" style="flex:1"></span></div>
+    <div style="display:flex;gap:10px"><b>•</b><span class="blank" style="flex:1"></span></div>
+    <div style="display:flex;gap:10px"><b>•</b><span class="blank" style="flex:1"></span></div>
+    <p style="margin:0">Next steps we agreed on: <span class="blank" style="min-width:330px"></span></p>
+    <p style="margin:0">Please send me a copy of <span class="blank" style="min-width:250px"></span> by <span class="blank" style="min-width:110px"></span>.</p>
+    <p style="margin:0">If I have misunderstood anything, please let me know in writing.</p>
+    <p style="margin:12px 0 0">Sincerely,</p>
+    <p style="margin:0"><span class="blank" style="min-width:220px"></span></p>
+  </div>
+  <p class="intro" style="font-size:15px">Tip: keep a copy of every letter and email in your binder.</p>
+  <div class="foot"><span>IEP Ready Kit</span><span>General information, not legal advice</span><span>Page 5</span></div>
+</section>
+
+</body>
+</html>

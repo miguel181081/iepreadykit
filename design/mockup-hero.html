@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Hero mockup scene (source)</title>
+<style>
+  /* Scene is 1600 x 1100. Rendered to an image for the hero. */
+  *{box-sizing:border-box}
+  body{margin:0;width:1600px;height:1100px;overflow:hidden;background:var(--bg,#F6EFE4);font-family:-apple-system,"Helvetica Neue",Arial,sans-serif}
+  .scene{position:relative;width:1600px;height:1100px}
+  .floor{position:absolute;left:60px;right:60px;bottom:120px;height:60px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(60,40,20,.18),rgba(60,40,20,0) 70%)}
+  .paper{position:absolute;background:#fff;box-shadow:0 2px 3px rgba(0,0,0,.08),0 18px 38px -12px rgba(40,30,20,.35);border-radius:3px;overflow:hidden}
+  .paper img{display:block;width:100%;height:auto}
+
+  /* MacBook */
+  .mac{position:absolute;left:470px;top:150px;width:920px}
+  .lid{position:relative;background:#111;border-radius:26px 26px 6px 6px;padding:26px 26px 30px;box-shadow:0 30px 60px -20px rgba(20,20,30,.5)}
+  .lid::before{content:"";position:absolute;left:50%;top:9px;width:8px;height:8px;border-radius:50%;background:#2a2a2a;transform:translateX(-50%)}
+  .screen{height:540px;border-radius:6px;overflow:hidden;background:#3A3D42;display:flex}
+  .side{width:150px;background:#2C2F33;padding:18px 22px;display:flex;flex-direction:column;gap:14px}
+  .side img{width:100%;border-radius:2px;box-shadow:0 2px 6px rgba(0,0,0,.4);opacity:.92}
+  .side img.sel{outline:3px solid #4F8EF7;outline-offset:3px;opacity:1}
+  .view{flex:1;display:flex;flex-direction:column}
+  .bar{height:38px;background:#2C2F33;border-bottom:1px solid #222;display:flex;align-items:center;gap:8px;padding:0 14px;color:#C9CDD2;font-size:13px}
+  .bar i{width:12px;height:12px;border-radius:50%;display:block}
+  .doc{flex:1;display:grid;place-items:center;padding:20px}
+  .doc img{height:470px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+  .base{position:relative;height:26px;margin:0 -60px;background:linear-gradient(#D9DCE0,#AEB3B9);border-radius:0 0 30px 30px;box-shadow:0 20px 30px -12px rgba(20,20,30,.45)}
+  .base::before{content:"";position:absolute;left:50%;top:0;width:160px;height:10px;background:#BFC4CA;border-radius:0 0 12px 12px;transform:translateX(-50%)}
+
+  /* iPad */
+  .ipad{position:absolute;left:1150px;top:470px;width:360px;height:480px;background:#1A1B1E;border-radius:30px;padding:16px;transform:rotate(5deg);box-shadow:0 2px 0 #3a3b3f inset,0 34px 50px -18px rgba(20,20,30,.6)}
+  .ipad .disp{width:100%;height:100%;background:#fff;border-radius:16px;overflow:hidden}
+  .ipad img{width:100%;display:block}
+
+  /* Pencil */
+  .pencil{position:absolute;left:960px;top:938px;width:300px;height:14px;border-radius:7px;background:linear-gradient(#F4C430,#D9A514);transform:rotate(-14deg);box-shadow:0 8px 12px -6px rgba(0,0,0,.35)}
+  .pencil::before{content:"";position:absolute;right:-26px;top:0;border-left:26px solid #E8C9A0;border-top:7px solid transparent;border-bottom:7px solid transparent}
+  .pencil::after{content:"";position:absolute;left:-18px;top:0;width:22px;height:14px;border-radius:7px 0 0 7px;background:#E68FA0}
+</style>
+</head>
+<body>
+<div class="scene">
+  <div class="floor"></div>
+  <!-- printed pages, back to front -->
+  <div class="paper" style="left:90px;top:420px;width:400px;transform:rotate(-9deg)"><img src="../images/kit/questions-1200.jpg" alt=""></div>
+  <div class="paper" style="left:170px;top:470px;width:400px;transform:rotate(-3deg)"><img src="../images/kit/concerns-1200.jpg" alt=""></div>
+  <div class="paper" style="left:290px;top:540px;width:400px;transform:rotate(3deg)"><img src="../images/kit/goals-1200.jpg" alt=""></div>
+
+  <div class="mac">
+    <div class="lid">
+      <div class="screen">
+        <div class="side">
+          <img class="sel" src="../images/kit/cover-600.jpg" alt="">
+          <img src="../images/kit/checklist-600.jpg" alt="">
+          <img src="../images/kit/concerns-600.jpg" alt="">
+          <img src="../images/kit/questions-600.jpg" alt="">
+        </div>
+        <div class="view">
+          <div class="bar"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span style="margin-left:14px">IEP-Ready-Kit.pdf — Page 1 of 6</span></div>
+          <div class="doc"><img src="../images/kit/cover-1200.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="base"></div>
+  </div>
+
+  <div class="ipad"><div class="disp"><img src="../images/kit/checklist-1200.jpg" alt=""></div></div>
+  <div class="pencil"></div>
+</div>
+</body>
+</html>
